@@ -23,6 +23,7 @@ public class GetCapitalServlet extends HttpServlet {
 		String country[] = new String[] {"Paris", "New Delhi","Islamabad","Bejing","London","Washington, D.C."};
 		pw.println("<h1 style='text-align:center'>The capital city name is ::  <span style='color:blue'> "+ country[countryindex] + "<span></h1>");
 		pw.println("<h1 style='text-align:center'><a href='input.html'>Home</a></h1>");
+		pw.println("<h1 style='text-align:center'><a href='improvised_input.html'>Home</a></h1>");
 		//close stream
 		pw.close();
 	}//doGet(-,-)

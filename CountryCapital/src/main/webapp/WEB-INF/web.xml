@@ -3,6 +3,7 @@
   <display-name>CountryCapital</display-name>
   <welcome-file-list>
     <welcome-file>input.html</welcome-file>
+    <welcome-file>improvised_input.html</welcome-file>
   </welcome-file-list>
   
   <servlet>
