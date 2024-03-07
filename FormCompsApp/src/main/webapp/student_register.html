@@ -1,0 +1,123 @@
+<h1 style="color:pink;text-align: center;">Student Registration Details</h1>
+<form action="registrationurl" method="GET">
+    <table border="0" bgcolor="cyan" align="center">
+        <tr>
+            <td>Student name:: </td>
+            <td><input type="text" name="sname"></td>
+        </tr>
+        <tr>
+            <td>Student address::</td>
+            <td>
+                <textarea name="sadd" cols="10" rows="5" placeholder="Address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Gender:: </td>
+            <td>
+                <input type="radio" name="gender" value="M">Male &nbsp;
+                <input type="radio" name="gender" value="F">Female &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>Marital Status:: </td>
+            <td>
+            	<input type="radio" name="ms" value="single">Single &nbsp;
+                <input type="radio" name="ms" value="married">Married &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile Number:: </td>
+            <td><input type="tel" name="contactNo"></td>
+        </tr>
+        <tr>
+            <td>Email:: </td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Qualification:: </td>
+            <td>
+                <select name="qlfy">
+                    <option value="" selected>SELECT</option>
+                    <option value="engg">B.E/B.Tech</option>
+                    <option value="medico">MBBS</option>
+                    <option value="arts">BA-MA</option>
+                    <option value="commerce">B.com/M.com/CA</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobbies::</td>
+            <td>
+                <input type="checkbox" name="hb" value="reading">Reading Books &nbsp;
+                <br>
+                <input type="checkbox" name="hb" value="watching">Watching TV &nbsp;
+                <br>
+                <input type="checkbox" name="hb" value="roaming">Travelling &nbsp;
+                <br>
+                <input type="checkbox" name="hb" value="sports">Playing Games &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>Favorite colors :: </td>
+            <td>
+                <select name="favColors" multiple>
+                    <option value="yellow">Yellow</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="pink">Pink</option>
+                    <option value="black">Black</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Pet name:: </td>
+            <td><input type="text" name="pet"></td>
+        </tr>
+        <tr>
+            <td>DOB(Date of Birth):: </td>
+            <td><input type="date" name="dob" min="1990=01-01" id="dob" onfocus="f1()"></td>
+        </tr>
+        <tr>
+            <td>TOB(Time of Birth):: </td>
+            <td><input type="time" name="tob"></td>
+        </tr>
+        <tr>
+            <td>Month of Birth :: </td>
+            <td><input type="month" name="mob"></td>
+        </tr>
+        <tr>
+            <td>Week of Birth :: </td>
+            <td><input type="week" name="wob"></td>
+        </tr>
+        <tr>
+            <td>Sentiment color:: </td>
+            <td><input type="color" name="scolor"></td>
+        </tr>
+        <tr>
+            <td>FB url:: </td>
+            <td><input type="url" name="fburl"></td>
+        </tr>
+        <tr>
+            <td>Expected salary:: </td>
+            <td><input type="range" name="sal" min="100000" max="10000000"></td>
+        </tr>
+        <tr>
+            <td>Google Search:: </td>
+            <td><input type="search" name="ss"></td>
+        </tr>
+        <tr>
+            <td>Favorite Number:: </td>
+            <td><input type="number" name="favNo" min="1" max="9"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="register student"></td>
+            <td><input type="reset" value="center"></td>
+        </tr>
+    </table>
+</form>
+<script>
+    function f1(){
+        document.getElementById('dob').max =
+            new Date(new Date().getTime - new Date().getTimezoneOffset()*60000).toString().split("T")[0];
+    }
+</script>
