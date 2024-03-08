@@ -1,0 +1,2 @@
+In this project, I have developed multiple link work in one file.
+I have developed dynamically all country , all language and current date wise weather auto detect.

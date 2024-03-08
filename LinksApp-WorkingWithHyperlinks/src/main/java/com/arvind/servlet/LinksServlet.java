@@ -32,14 +32,14 @@ public class LinksServlet extends HttpServlet {
 				langSet.add(l.getDisplayLanguage());
 			}
 			pw.println("<h1 style='color:green;text-align:center'>All language are </h1>");
-			langSet.forEach(lang -> pw.println(lang + ", "));
+			langSet.forEach(lang -> pw.println("<h2 style='font-size:20px;'>"+lang + "</h2><br>"));
 		} else if(p1Val.equalsIgnoreCase("link2")) {
 			Set<String> countriesSet = new HashSet();
 			for(Locale l : locales) {
 				countriesSet.add(l.getDisplayCountry());
 			}
 			pw.println("<h1 style='color:yellow;text-align:center'>All countries are </h1>");
-			countriesSet.forEach(country -> pw.println(country + ", "));
+			countriesSet.forEach(country -> pw.println("<h2 style='font-size:20px;'>" + country + "</h2><br>"));
 		} else {
 			//get System date and time
 			LocalDateTime ldt = LocalDateTime.now();
